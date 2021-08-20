@@ -1,0 +1,726 @@
+/* default setting */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/* header styling*/
+header {
+    background-color: rgba(4, 110, 27, 0.863);
+    height: 4.5rem;
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    border: rgb(rgb(3, 112, 57));
+}
+
+/* logo styling */
+.logo h2 {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 70px;
+    /* padding-top: 3px; */
+    padding-top: 0.1px;
+    /* margin-top: 1px; */
+    
+    
+}
+
+/* hovering effect on 2nd letter of logo */
+.logo h2 span:hover{
+    color: snow;
+
+} 
+
+/* setting the position of menus */
+ul {
+    display: flex;
+    padding-top: 2px;
+    margin-left: 45rem;
+    margin-top: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* styling menus to insert space between them */
+ul li {
+    padding-right: 3rem;
+    word-spacing: 1rem;
+    
+}
+
+/* styling menus */
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/* hovering effect on menus */
+ul li a:hover {
+    background-color: white;
+    /* border-radius: 46% 54% 75% 25% / 52% 44% 56% 48% ; */
+    /* border-radius: 54% 46% 82% 18% / 43% 44% 56% 57%; */
+    border-radius: 46% 54% 85% 15% / 52% 44% 56% 48% ;
+    padding: 18px;
+    width: 200px;
+    height: 150px;
+}
+
+/* styling HOME page */
+.background {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    /* width: 100%; */
+    width: 100%;
+    height: 100vh;
+}
+
+.home-content .text1 {
+    position: absolute;
+    top: 15rem;
+    left: 17rem;
+    color: white;
+    font-size: 30px;
+    /* padding-left: 0px;
+    margin-left: 1px; */
+    /* padding-left: 2rem; */
+}
+
+
+/* home image styling */
+.home-content .home-img img {
+    position: absolute;
+    top: 9rem;
+    left: 48rem;
+}
+
+
+
+.home-content .text2 {
+    position: absolute;
+    top: 17rem ;
+    left: 14rem;
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: 600;
+    font-size: 70px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    margin: auto 0 auto 0px;
+}
+
+.home-content .text3 {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    top: 23rem;
+    left: 14rem;
+}
+
+.home-content a {
+    display: inline-block;
+    background: black;
+    /* background:rgba(4, 110, 27, 0.863); */
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 30rem;
+    left: 15rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid rgba(4, 110, 27, 0.863);
+    transition: all 0.3s ease
+}
+
+.home-content a:hover {
+    background: rgb(3, 112, 57);
+    /* transform: translateY(1); */
+    z-index: 2;
+}
+
+
+
+/* about section styling */
+.about {
+    display: flex;
+}
+
+.about-page .about-heading  {
+    /* color: rgba(4, 110, 27, 0.863); */
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 54rem;
+    left: 44rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.about-page .sub-heading .line-1 {
+    color: black;
+    
+
+}
+
+.about-page .sub-heading {
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: 750;
+    font-size: 450;
+    position: absolute;
+    top: 57rem;
+    left: 45rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about-page .sub-heading .line-2 {
+    color: black;
+
+}
+
+/* .about .about-heading::after{
+    content: "who I am";
+} */
+
+
+.about-img img {
+    position: absolute;
+    top: 62rem;
+    left: 5rem;
+    border-radius: 50px;
+    transition: 0.5s;
+
+}
+
+.about-img img:hover {
+    transform: scale(0.5);
+    z-index: 2;
+}
+
+
+.about-page .about-text .text-1 {
+    position: absolute;
+    left: 34rem;
+    top: 64rem;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+.about-page .about-text .text-2 {
+    color: rgba(4, 110, 27, 0.863);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about-page .about-text p {
+    position: absolute;
+    font-weight: normal;
+    font-size: 18px;
+    top: 68rem;
+    left: 34rem;
+    
+}
+
+.about-text a {
+    display: inline-block;
+    background:rgba(4, 110, 27, 0.863);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 75rem;
+    left: 35rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid rgba(4, 110, 27, 0.863);
+    transition: all 0.3s ease
+}
+
+/* skills styling */
+.skills {
+    display: flex;
+}
+
+.skills-page .skills-heading {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 97rem;
+    left: 45.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.skills-page .sub-heading .line-1 {
+    color: black;
+}
+
+
+.skills-page .sub-heading {
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: 750;
+    font-size: 450;
+    position: absolute;
+    top: 100rem;
+    left: 43rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills-page .sub-heading .line-2 {
+    color: black;
+}
+
+.container {
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    /* height: 50vh; */
+
+    /* padding-top: 150px; */
+    padding-left: 50px;
+    position: absolute;
+    top: 104rem;
+    /* left: 7rem; */
+    text-align: center;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+   
+
+}
+
+.skill-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    /* padding: 18px; */
+    
+    position: relative;
+    /* top: 101rem;
+    left: 45rem; */
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.img:hover {
+    transform: rotate(360deg);
+    z-index: 2;
+}
+
+
+.img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3 {
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+}
+
+.skill-title h3:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.skill-icon {
+    width: 50px;
+    z-index: 2;
+}
+
+/* projects section styling */
+.projects {
+    display: flex;
+}
+
+.projects-page .project-heading  {
+    /* color: rgba(4, 110, 27, 0.863); */
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 143rem;
+    left: 44rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.projects-page .sub-heading .line-1 {
+    color: black;
+    
+
+}
+
+.projects-page .sub-heading {
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: 750;
+    font-size: 450;
+    position: absolute;
+    top: 146rem;
+    left: 43rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.projects-page .sub-heading .line-2 {
+    color: black;
+    
+
+}
+
+.projects-lists .projectNo {
+    color: black;
+    font-weight: bold;
+    
+
+}
+
+.projects-lists .BBMS {
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(4, 110, 27, 0.863);
+    font-weight: 40;
+    font-size: 40px;
+    position: absolute;
+    top: 153rem;
+    left: 35rem;
+
+}
+
+.projects-lists .BBMS:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.image-BBMS img {
+    position: absolute;
+    top: 158.5rem;
+    left: 7rem;
+    /* border-radius: 50px; */
+    /* transition: 0.5s; */
+
+}
+
+.BBMS-description p {
+    
+    position: absolute;
+    font-weight: normal;
+    font-size: 18px;
+    top: 162rem;
+    left: 37rem;
+
+}
+
+
+.BBMS-description a {
+    display: inline-block;
+    background-color: rgba(4, 110, 27, 0.863);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin-top: 35px;
+    text-decoration: none;
+    
+    border-radius: 8px;
+    border: 2px solid rgba(4, 110, 27, 0.863);
+    
+    position: absolute;
+    top: 175rem;
+    left: 8rem;
+   
+
+}
+
+.BBMS-description a:hover {
+    background-color: rgb(231, 12, 30);
+}
+
+
+/* contact section styling */
+.contact {
+    display: flex;
+}
+
+.contact-page .contact-heading {
+    position: absolute;
+    top: 188rem;
+    left: 44rem;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-page .sub-heading .line-1{
+    color: black;
+}
+
+.contact-page .sub-heading {
+    color: rgba(4, 110, 27, 0.863);
+    font-size: 450;
+    font-weight: 750;
+    position: absolute;
+    left: 44rem;
+    top: 191rem;
+}
+
+.contact-page .sub-heading .line-2 {
+    color: black;
+
+}
+
+.left-column .text {
+    color: rgba(4, 110, 27, 0.863);
+    position: absolute;
+    top: 197rem;
+    left: 10rem;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.left-column p {
+    position: absolute;
+    left: 10.5rem;
+    top: 199rem;
+}
+
+/* name box styling */
+.icons .box-1 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 11rem;
+    top: 203rem;
+    /* background-color: rgba(4, 110, 27, 0.863); */
+}
+
+.icons .box-1 .name {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    position: absolute;
+    left: 15rem;
+    top: 203rem;
+}
+
+.icons .box-1 .my-name {
+    position: absolute;
+    left: 15rem;
+    top: 204.5rem;
+}
+
+/* address box styling */
+.icons .box-2 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 11rem;
+    top: 207.5rem;
+    /* background-color: rgba(4, 110, 27, 0.863); */
+}
+
+.icons .box-2 .address {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    position: absolute;
+    left: 15rem;
+    top: 207rem;
+}
+
+.icons .box-2 .my-address {
+    position: absolute;
+    left: 15rem;
+    top: 208.5rem;
+}
+
+/* email box styling */
+.icons .box-3 img {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 11rem;
+    top: 212.2rem;
+    /* background-color: rgba(4, 110, 27, 0.863); */
+}
+
+.icons .box-3 .email {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    position: absolute;
+    left: 15rem;
+    top: 212rem;
+}
+
+.icons .box-3 .my-email {
+    position: absolute;
+    left: 15rem;
+    top: 213.5rem;
+}
+
+
+/* form styling */
+.right-column .message-title {
+    color: rgba(4, 110, 27, 0.863);
+    position: absolute;
+    top: 197rem;
+    left: 50rem;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+
+ form  {
+    position: absolute;
+    left: 50rem;
+    top: 199rem;
+    line-height: 40px;
+    border: solid 1px lightgray;
+   
+    
+}
+
+form .button {
+    border-radius: 5px;
+}
+
+/* form .button:hover {
+    color: rgba(4, 110, 27, 0.863);
+} */
+
+
+/* footer section */
+
+.footer-area {
+    margin-top: 182rem;
+    padding: 100px 0;
+    background: #5b9e72;
+    background: -moz-linear-gradient(left,  #5b9e72 0%, #589976 99%);
+    background: -webkit-linear-gradient(left,  #5b9e72 0%,#589976 99%);
+    background: linear-gradient(to right,  #5b9e72 0%,#589976 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b9e72', endColorstr='#589976',GradientType=1 );
+    position: relative;
+ 
+}
+
+.main {
+    width: 1300px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.name-footer {
+    width: 299px;
+}
+
+/* .social-links {
+    width: 300px;
+} */
+
+.social-links a {
+    margin-left: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    /* margin-right: 20px; */
+    
+
+}
